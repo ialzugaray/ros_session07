@@ -1,0 +1,29 @@
+<robot name="robot_model">
+	<link name="link1">
+		<collision>
+			<origin xyz="0 0 1" rpy="0 0 0"/> 
+			<geometry><box xyz="0 0 0"/></geometry>
+		</collision>
+		
+		<visual>
+
+			<geomtry><box size="3 3 3"/></geometry>
+			<material name="orange"/>
+		</visual>
+		
+		<intertial>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<mass value="1"/>
+			<inertia
+				ixx="1.0" ixy="0.0" ixz="0.0"
+				iyy="1.0" iyz="0.0"
+				izz="1.0"/>
+		</intertial>
+	</link>
+
+	<gazebo reference="link1">
+		<material>Gazebo/White</material>
+		<material>true</material>
+	</gazebo>
+
+</robot>

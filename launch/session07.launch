@@ -1,0 +1,13 @@
+<launch>
+	<!-- World -->
+	<include file="$(find gazebo_ros)/launch/empty_world.launch"/>
+
+	<!-- Robot-->
+	<include file="$(find session07)/launch/spawn_robot.launch"/>
+	
+	<!--Controller-->
+	<include file="$(find session07)/launch/spawn_controller.launch"/>
+	
+	<!-- Grpahical controller-->
+	<include file="$(find session07)/launch/rqt_control.launch"/>
+</launch>
